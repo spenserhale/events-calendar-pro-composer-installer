@@ -1,0 +1,49 @@
+{
+  "name": "spenserhale/events-calendar-pro-composer-installer",
+  "description": "A composer install helper for Events Calendar Pro",
+  "type": "composer-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Spenser Hale",
+      "email": "spenserhaledeveloper@outlook.com"
+    }
+  ],
+  "keywords": [
+    "composer",
+    "plugin",
+    "env",
+    "private",
+    "wordpress"
+  ],
+  "require": {
+    "php": "^7.1 || ^8.0",
+    "composer-plugin-api": "^1.0 || ^2.0",
+    "ffraenz/private-composer-installer": "^5.0"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master",
+    "composer/composer": "^1.0 || ^2.0",
+    "laminas/laminas-coding-standard": "^2.1",
+    "phpunit/phpunit": "^8.0"
+  },
+  "scripts": {
+    "check": [
+      "@cs-check",
+      "@test"
+    ],
+    "cs-check": "phpcs",
+    "cs-fix": "phpcbf",
+    "test": "phpunit --colors=always",
+    "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+  },
+  "autoload": {
+    "psr-4": {
+      "spenserhale\\EventsCalendarProComposerInstaller\\": "src"
+    }
+  },
+  "extra": {
+    "class": "spenserhale\\EventsCalendarProComposerInstaller\\Plugin",
+    "plugin-modifies-downloads": true
+  }
+}
