@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ebbd7b81032f1c8600a4d1219de2631b",
+    "content-hash": "59bf108f19f13c905846fe64f15e4c29",
     "packages": [
         {
             "name": "ffraenz/private-composer-installer",

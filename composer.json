@@ -19,8 +19,7 @@
   "require": {
     "php": "^7.1 || ^8.0",
     "composer-plugin-api": "^1.0 || ^2.0",
-    "ffraenz/private-composer-installer": "^5.0",
-    "symfony/polyfill-php80": "^1.22"
+    "ffraenz/private-composer-installer": "^5.0"
   },
   "require-dev": {
     "roave/security-advisories": "dev-master",

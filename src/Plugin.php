@@ -19,7 +19,7 @@ final class Plugin extends \FFraenz\PrivateComposerInstaller\Plugin
     {
         $url = $event->getProcessedUrl();
 
-        if (!str_contains($url, self::URL)) {
+        if(strpos($url, self::URL) === false) {
             return;
         }
 
